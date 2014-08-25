@@ -1,27 +1,3 @@
-///////////////////////////////////////////////////////////////////////////////
-//                   ALL STUDENTS COMPLETE THESE SECTIONS
-// Title:            BattleSweeper
-// Files:            BattleSweeper.java Puzzle.java Player.java
-// Semester:         CS302 Spring 2014
-//
-// Author:           Brendan Drackley
-// Email:            bdrackley@wisc.edu
-// CS Login:         drackley
-// Lecturer's Name:  Nick Pappas
-// Lab Section:      Lab 391
-//
-//////////////////// PAIR PROGRAMMERS COMPLETE THIS SECTION ///////////////////
-//
-// Pair Partner:     Joanna Mohr
-// Email:            jmohr8716@gmail.com
-// CS Login:         mohr
-// Lecturer's Name:  Nick Pappas
-// Lab Section:      392
-//
-//                   STUDENTS WHO GET HELP FROM ANYONE OTHER THAN THEIR PARTNER
-// Credits:          Senses Fail and other great bands
-//////////////////////////// 80 columns wide //////////////////////////////////
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -31,8 +7,6 @@ import java.util.Scanner;
 /**
  * This class is the main class of the program. It handles the main menu and 
  * basic game functionality.
- *
- * @author Brendan Drackley
  */
 public class BattleSweeper {
 	private int userChoice; //user's choice
@@ -56,12 +30,9 @@ public class BattleSweeper {
 	private String inputText; //text input string
 	private String tempUserName; //temporary variable for user's name
 	private String[] name; //String array for getting the puzzle name
-	//list of players
-	private ArrayList<Player> playerList = new ArrayList<Player>(); 
-	//list of puzzles
-	private ArrayList<Puzzle> puzzleList = new ArrayList<Puzzle>();
-	//temporary list of puzzles
-	private ArrayList<String> tempUserPuzzleList = new ArrayList<String>();
+	private ArrayList<Player> playerList = new ArrayList<Player>(); //list of players
+	private ArrayList<Puzzle> puzzleList = new ArrayList<Puzzle>(); //list of puzzles
+	private ArrayList<String> tempUserPuzzleList = new ArrayList<String>(); //temporary list of puzzles
 	private Scanner s = new Scanner(System.in); //System.in scanner (only one)
 	private Puzzle currentPuzzle; //the currently being used puzzle
 	
@@ -686,30 +657,7 @@ public class BattleSweeper {
 		
 		BattleSweeper newGame = new BattleSweeper();
 		newGame.showMainMenu();
-		
-		
-//		try{
-//			File input = new File("player_input.txt");
-//			Scanner fileScanner = new Scanner(input);
-//			String temp;
-//			String tempName;
-//			ArrayList<String> tempPuzzles = new ArrayList<String>();
-//			
-//			while(fileScanner.hasNextLine()){
-//				temp = fileScanner.nextLine();
-//				Scanner tempScanner = new Scanner(temp);
-//				tempName = tempScanner.next();
-//				while(tempScanner.hasNext()){
-//					tempPuzzles.add(tempScanner.next());
-//				}
-//				newGame.playerList.add(new Player(tempName, tempPuzzles));
-//			}
-//		}catch(FileNotFoundException e){
-//			
-//		}
-		
-		
-		
+	
 	}
 
 }
